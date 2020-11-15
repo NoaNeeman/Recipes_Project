@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <link href="buttons.css" rel="stylesheet" />
+    <link href="boots_css.css" rel="stylesheet" />
+    <script src="index_js.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_koOtOrKcbXJQd1h7110YY");
+        })();
+    </script>
+</head>
+<body>
+    <div class="container  h-100">
+        <div class="row news">
+            <div class="col-12 box-1">
+                <div id="addNewIngredient" class=" btn btn-one topPage">
+                    <span>new Ingredient</span>
+                </div>
+                <div id="addNewRecipe" class=" btn btn-one topPage">
+                    <span>new Recipe</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="simpleForm"></div>
+            <div id="bg-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="cont" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div id="cont" class="modal-content"> </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center h-100 mt-0">
+            <div class="searchbar">
+                <a href="#" class="search_icon">clear</a>
+                <input type="text" id="SearchRec" placeholder="Search recipe.." onkeyup="SearchRecipes()"><br />
+
+            </div>
+        </div>
+        <div class="row rw">
+            <div class="bg col-12">
+                <div class="header_img">
+                    <h1 id="recipes_title">Recipes</h1>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="dishes_c" class="col-12 ">
+                <img id="video_Dishes" src="images/‏‏vImage1C.jpg" onclick="print_all_rec('VideoRecipes')" />
+                <img id="written_Dishes" src="images/‏‏wImage2C.jpg" onclick="print_all_rec('DishRecipe')" />
+                <img id="favorites_Dishes" src="images/favImage.jpg" onclick="print_favorites()" />
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12" id="Dishes">
+            </div>
+        </div>
+        <div class="subscribe-area text-center section-padding">
+            <form id="myform">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div>
+                                <h1>Never miss a recipe!</h1>
+                                <h4> Subscribe to get new recipes via email </h4>
+                            </div>
+                            <div class="subscribe-box" action="#">
+                                <div class="subscribe-box">
+                                    <input id="newsMail" name="newsMail" type="email" required="" placeholder="Your email address">
+                                    <button type="submit" id="search-letter-btn" class="btn-default btn-search">sign me up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+

@@ -1,0 +1,87 @@
+﻿
+/*Small devices and Medium devices */
+@media (max-width: 992px) {
+
+    .btn {
+        width: 240px;
+        height: 50px;
+        line-height: 45px;
+    }
+
+    #recipes_title {
+        font-size: 40px;
+    }
+
+    #Dishes .formGrid div {
+        width: 450px;
+        margin-bottom: 20px;
+    }
+
+    label, h1, p, span, h3 {
+        font-family: Palatino, URW Palladio L, serif
+    }
+
+    .myButton {
+        width: 170px;
+        height: auto;
+        font-size: 17px;
+        font-family: Palatino, URW Palladio L, serif
+    }
+
+    #simpleForm .formGrid div {
+        width: 250px;
+    }
+
+    input[type=checkbox], input[type=radio] {
+        transform: scale(2);
+        margin-bottom: 20px;
+    }
+
+    .ing {
+        width: 40%;
+    }
+
+    .modal-content > h1 {
+        font-size: 40px;
+    }
+
+    #recipes_title {
+        font-family: Palatino, URW Palladio L, serif;
+        font-size: 42px;
+    }
+
+    .formGrid h2 {
+        font-size: 40px;
+    }
+    .fa {
+    font-size: xx-large;
+    }
+    #dishes_c img {
+        width: 40%;
+    }
+
+    #dishes_c img {
+        width: 40%;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+   
+    }
+   
+    #dishes_c img:hover {
+       -webkit-animation: rotation 1s linear;
+       -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    @-webkit-keyframes rotation {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+
+        to {
+            -webkit-transform: rotate(359deg);
+        }
+    }
+
+ }

@@ -1,0 +1,284 @@
+﻿
+.btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.btn-one {
+    color: black;
+    transition: all 0.3s;
+    position: relative;
+    font-size: large;
+    font-weight: bolder;
+    font-family: cursive;
+}
+
+.topPage {
+    display: inline-block;
+}
+
+#addNewRecipe span {
+    font-size: x-large;
+}
+
+#addNewIngredient span {
+    font-size: x-large;
+}
+
+.btn-one span {
+    transition: all 0.3s;
+}
+
+.btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(228,6,6,0.5);
+    border-bottom-color: rgba(228,6,6,0.5);
+    transform: scale(0.1, 1);       
+}
+
+.btn-one:hover span {
+    letter-spacing: 2px;
+    color: #db4a35ba;
+}
+
+.btn-one:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(223,194,160,0.19);
+    border-radius: 20px;
+}
+
+.btn-one:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
+}
+
+.myButton {
+    background-color: rgba(223,194,160,0.19);
+    border-radius: 40px;
+    width: 200px;
+    border: 2px outset;
+    background: linear-gradient(to top,#ffecec82, #eeee5e26, #ff272761);
+    margin-top: 10px;
+}
+
+.myButton::after {
+    border-radius: 40px;
+}
+
+.myButton::before {
+    border-radius: 40px;
+}
+
+.myButton:hover {
+    letter-spacing: 2px;
+    color: #db4a35ba;
+}
+
+.myButton.vid {
+    background: linear-gradient(to top,#ffecec82, #eeee5e26, #6db20061);
+}
+
+:checked {
+color: pink;
+}
+
+input[type=checkbox]{
+color: pink
+}
+
+input[type="checkbox"]:checked {
+    background-color: black;
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.searchbar {
+    margin-bottom: 20px;
+    margin-top: auto;
+    height: 40px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 5px;
+    width: 200px;
+    display: inline-block;
+}
+
+.SearchRec {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .SearchRec {
+    padding: 0 10px;
+    width: 450px;
+    border: none;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon {
+    color: #e74c3c;
+}
+
+.search_icon {
+    font-size: large;
+    font-weight: bolder;
+    margin-right: 5px;
+    height: 30px;
+    width: 50px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    color: white;
+    padding-left: 5px;
+    border-left: 2px solid gray;
+    font-family: cursive;
+}
+
+input#SearchRec {
+    margin-top: 5px;
+    background: none;
+    color: red;
+    border: none;
+    outline: none;
+    width: 130px;
+    float: left;
+}
+
+input#SearchRec:focus {
+    border: none;
+}
+
+.searchbar .fa {
+font-size: x-large;
+}
+
+
+.subscribe-area {
+    background: rgba(0, 0, 0, 0) url("images/sendMail.jpg") no-repeat scroll center center / cover;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+
+
+    .subscribe-area p {
+        padding: 0 132px;
+        line-height: 20px;
+    }
+
+.subscribe-box {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.subscribe-area input[type="email"] {
+    background: rgba(54, 54, 54, 0.35) none repeat scroll 0 0 !important;
+    border-color: rgba(204, 204, 204, 0.35) -moz-use-text-color rgba(204, 204, 204, 0.35) rgba(204, 204, 204, 0.35) !important;
+    border-style: solid none solid solid !important;
+    border-width: 1px 0 1px 1px !important;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    height: 45px;
+    left: 0;
+    margin: 0 auto;
+    padding: 3px 10px;
+    transition: all 0.3s linear 0s;
+    width: 70%;
+}
+
+button#search-letter-btn {
+    background-color: #353b48;
+    color: white;
+    border: 2px solid black;
+    border-radius: 30px;
+    font-weight: 800;
+    height: 40px;
+    box-shadow: 2px 2px 7px #959faa;
+    width: 140px;
+}
+
+button#search-letter-btn:hover {
+    color: red;
+    cursor: pointer;
+    box-shadow: 2px 2px 7px white;
+}
